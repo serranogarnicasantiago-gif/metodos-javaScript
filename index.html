@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejemplos JavaScript</title>
+</head>
+<body>
+
+    <!-- 1. innerHTML - Ejemplo 1: cambiar texto -->
+    <p id="mensaje">Hola mundo</p>
+    <script>
+        document.getElementById("mensaje").innerHTML = "¡Bienvenido!";
+    </script>
+
+    <!-- 1. innerHTML - Ejemplo 2: agregar una imagen -->
+    <div id="imagen"></div>
+    <script>
+        document.getElementById("imagen").innerHTML = '<img src="https://via.placeholder.com/50" alt="Logo">';
+    </script>
+
+    <!-- 2. getElementById() - Ejemplo 1: mostrar un mensaje -->
+    <p id="aviso">Mensaje inicial</p>
+    <script>
+        var elemento = document.getElementById("aviso");
+        elemento.textContent = "Hola Estudiantes";
+    </script>
+
+    <!-- 2. getElementById() - Ejemplo 2: cambiar el color de un botón -->
+    <button id="btn">Haz clic</button>
+    <script>
+        document.getElementById("btn").style.backgroundColor = "lightblue";
+    </script>
+
+    <!-- 3. querySelector() - Ejemplo 1: obtener un elemento por clase -->
+    <p class="destacado">Texto importante</p>
+    <script>
+        document.querySelector(".destacado").style.color = "red";
+    </script>
+
+    <!-- 3. querySelector() - Ejemplo 2: obtener un botón y deshabilitarlo -->
+    <button class="btn">Enviar</button>
+    <script>
+        document.querySelector(".btn").disabled = true;
+    </script>
+
+</body>
+</html>
